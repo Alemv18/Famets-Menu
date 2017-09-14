@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body { 
+  background-color:white;
+  font-family: 'Lato', sans-serif;
+}
+
+.dropdown-inline {
+  display: inline-block;
+  position: relative;
+}
+
+.btn-primary {
+    font-size: 15px;
+    padding: 10px 60px;
+    background-color: black;
+    border-color: black;
+    display: inline-block;
+}
+
+.btn-primary:hover, 
+.btn-primary:focus {
+  background-color: black !important;
+  border-color: black;
+}
+
+#nav-bar {
+  margin-top: 5%;
+}
