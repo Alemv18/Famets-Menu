@@ -15,7 +15,7 @@
 <body>
 <div class="bs-demo-dropdowns">
         <div class="logo">
-          <img src="images/logo-famets.png"/>
+          <img src="./images/famets-logo-black.png"/>
         </div>
         <div id="nav-bar" class="container">
           <div class="dropdown dropdown-inline">
@@ -24,7 +24,7 @@
             <li class="dropdown">
                 <a href="#">New<span class="caret"></span></a>
                 <ul class="dropdown-menu dropdownhover-right">
-                  <li><a href="#">Almacen</a></li>
+                  <li id="form-almacen"><a>Almacen</a></li>
                   <li><a href="#">Proyecto</a></li>
                   <li><a href="#">Diseño</a></li>
                   <li><a href="#">Inventario</a></li>
@@ -38,67 +38,38 @@
               </ul>
           </div>
           <button type="button" class="btn btn-primary edit-button">Edit</button> 
-         <div class="dropdown dropdown-inline">
-            <a href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-animations="zoomIn zoomIn zoomIn zoomIn">File<span class="caret"></span></a>
+          <div class="dropdown dropdown-inline">
+            <a id=" tool-button" href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-animations="zoomIn zoomIn zoomIn zoomIn">Tools<span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
             <li class="dropdown">
-                <a href="#">New<span class="caret"></span></a>
+                <a href="#">Inventory <span class="caret"></span></a>
                 <ul class="dropdown-menu dropdownhover-right">
-                  <li><a href="#">Almacen</a></li>
+                  <li><a>Almacen</a></li>
                   <li><a href="#">Proyecto</a></li>
-                  <li><a href="#">Diseño</a></li>
-                  <li><a href="#">Inventario</a></li>
                 </ul>
               </li>
-              <li><a href="#">Open</a></li>
-              <li><a href="#">Save</a></li>
-              <li><a href="#">Import</a></li>
-              <li><a href="#">Export</a></li>
-              <li><a href="#">Review</a></li>
+              <li><a href="#">Design</a></li>
+              <li><a href="#">Simulation</a></li>
               </ul>
-          </div>
-
-
-
         </div>
-        <!-- <div class="dropdown dropdown-inline">
-            <a href="#" class="btn btn-primary dropdown-toggle edit-button" data-toggle="dropdown" data-hover="dropdown" data-animations="zoomIn zoomIn zoomIn zoomIn">File<span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li class="dropdown">
-                <a href="#">Another dropdown <span class="caret"></span></a>
-                <ul class="dropdown-menu dropdownhover-right">
-                  <li><a href="#">Action</a></li>
-                  <li><a href="#">Another action</a></li>
-                  <li><a href="#">Something else here</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">Separated link</a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">One more separated link</a></li>
-                </ul>
-              </li>
-              </ul>
-          </div>
-        </div> -->
       </div>
-    </div>
+ <div id="login-overlay" class="overlay">
+<div id="login-form">
+  <div class="close"></div>
+  <div class="input-wr">
+    <input type="email" name="email" placeholder="Email Address">
+    <div class="error-message">Invalid email</div>
+  </div>
+  <div class="input-wr">
+    <input type="password" name="password" placeholder="Password">
+    <div class="error-message">Empty password</div>
+  </div>
+  <button class="btn-submit">Log in</button>
+</div>
+</div>
 <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="js/bootstrap-dropdownhover.js"></script>
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-36251023-1']);
-  _gaq.push(['_setDomainName', 'jqueryscript.net']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
+<script src="js/index.js"></script>
 </body>
 </html>

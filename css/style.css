@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
 body { 
-  background-color: black;
   font-family: 'Lato', sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .dropdown-inline {
@@ -26,6 +27,7 @@ body {
 
 #nav-bar {
   margin-top: 5%;
+  margin-left: 20%;
 }
 
 .btn .caret {
@@ -36,10 +38,140 @@ body {
   padding: 10px 120px;
 }
 
-.logo img {
+.logo img{
+  float: left;
+  margin-left: 50px;
+  display: inline-block;
+  position: relative;
   width: 20%;
+  margin-right: 50px;
 }
 
-a:focus {
-  background-color: black;
+/*Form section*/
+
+.overlay {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    -webkit-animation: fade-in .25s ease-in-out;
+    animation: fade-in .25s ease-in-out;
+    background: rgba(0, 0, 0, .7);
+}
+
+#login-form {
+    position: absolute;
+    right: 0;
+    left: 0;
+    display: block;
+    max-width: 350px;
+    margin: 150px auto 0;
+    padding: 40px 40px 35px;
+    -webkit-animation: fade-in-bottom .5s ease-in-out forwards;
+    animation: fade-in-bottom .5s ease-in-out forwards;
+    -webkit-animation-delay: .15s;
+    animation-delay: .15s;
+    white-space: nowrap;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#login-form .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 6px 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#login-form .close:before {
+    font-family: FontAwesome;
+    content: '\f00d';
+    color: #a5a5a5;
+}
+
+#login-form input {
+    font-size: 12px;
+    line-height: 38px;
+    width: 100%;
+    height: 38px;
+    margin: 0;
+    padding: 0 15px;
+    white-space: nowrap;
+    color: #444;
+    border: 1px solid #a5a5a5;
+    border-radius: 4px;
+    outline: none;
+}
+
+#login-form .input-wr {
+    position: relative;
+    overflow: hidden;
+    margin: 0 0 12px;
+}
+
+#login-form .error-message {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 38px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    width: 135px;
+    height: 100%;
+    height: 38px;
+    padding: 0 20px;
+    -webkit-animation: enter-error-message .15s ease-in-out;
+    animation: enter-error-message .15s ease-in-out;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    background-color: #e25366;
+}
+
+#login-form input.invalid + .error-message {
+    display: inline-block;
+}
+
+#login-form input.invalid:active + .error-message,
+#login-form input.invalid:focus + .error-message,
+#login-form input.changed + .error-message {
+    display: none;
+}
+
+#login-form .btn-submit {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 36px;
+    display: block;
+    width: 200px;
+    height: 38px;
+    margin: 20px auto 0;
+    cursor: pointer;
+    -webkit-transition: all .35s ease-in-out;
+    transition: all .35s ease-in-out;
+    text-transform: uppercase;
+    opacity: .9;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    background: -webkit-linear-gradient(315deg, #e61f6c 0%, #c21a5a 100%);
+    background: linear-gradient(135deg, #e61f6c 0%, #c21a5a 100%);
+}
+
+#login-form .btn-submit:hover {
+    opacity: 1;
+}
+
+#login-form .btn-submit:active,
+#login-form .btn-submit:focus,
+#login-form .btn-submit.active {
+    outline: 0;
+    box-shadow: none;
 }
