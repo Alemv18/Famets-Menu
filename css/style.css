@@ -132,7 +132,7 @@ body {
     animation: enter-error-message .15s ease-in-out;
     color: white;
     border-radius: 0 5px 5px 0;
-    background-color: #e25366;
+    background-color: #3ea3af;
 }
 
 #login-form input.invalid + .error-message {
@@ -162,7 +162,7 @@ body {
     border: none;
     border-radius: 30px;
     background: -webkit-linear-gradient(315deg, #e61f6c 0%, #c21a5a 100%);
-    background: linear-gradient(135deg, #e61f6c 0%, #c21a5a 100%);
+    background: linear-gradient(135deg, #3acccc 0%, rgb(53, 74, 154) 100%);
 }
 
 #login-form .btn-submit:hover {
