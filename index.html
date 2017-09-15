@@ -9,6 +9,7 @@
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="css/bootstrap-dropdownhover.css">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/style.css"/>
 </head>
 
@@ -24,10 +25,10 @@
             <li class="dropdown">
                 <a href="#">New<span class="caret"></span></a>
                 <ul class="dropdown-menu dropdownhover-right">
-                  <li id="form-almacen"><a>Almacen</a></li>
-                  <li><a href="#">Proyecto</a></li>
-                  <li><a href="#">Diseño</a></li>
-                  <li><a href="#">Inventario</a></li>
+                  <li id="form-almacen"><a>Storage</a></li>
+                  <li><a href="project.html">Project</a></li>
+                  <li><a href="#">Design</a></li>
+                  <li><a href="#">Inventory</a></li>
                 </ul>
               </li>
               <li><a href="#">Open</a></li>
@@ -42,10 +43,10 @@
             <a id=" tool-button" href="#" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-animations="zoomIn zoomIn zoomIn zoomIn">Tools<span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
             <li class="dropdown">
-                <a href="#">Inventory <span class="caret"></span></a>
+                <a href="#">Inventory<span class="caret"></span></a>
                 <ul class="dropdown-menu dropdownhover-right">
-                  <li><a>Almacen</a></li>
-                  <li><a href="#">Proyecto</a></li>
+                  <li><a>Storage</a></li>
+                  <li><a href="project.html">Project</a></li>
                 </ul>
               </li>
               <li><a href="#">Design</a></li>
@@ -53,9 +54,9 @@
               </ul>
         </div>
       </div>
- <div id="login-overlay" class="overlay">
+<div id="login-overlay" class="overlay">
 <div id="login-form">
-  <div class="close"></div>
+  <div class="close"><i class="fa fa-times" aria-hidden="true"></i></div>
   <div class="input-wr">
     <input type="email" name="email" placeholder="Clave de Almacen">
     <div class="error-message">Invalid key</div>

@@ -43,7 +43,7 @@ body {
   margin-left: 50px;
   display: inline-block;
   position: relative;
-  width: 20%;
+  width: 15%;
   margin-right: 50px;
 }
 
@@ -145,7 +145,8 @@ body {
     display: none;
 }
 
-#login-form .btn-submit {
+#login-form .btn-submit, 
+#project-submit {
     font-size: 14px;
     font-weight: bold;
     line-height: 36px;
@@ -162,7 +163,7 @@ body {
     border: none;
     border-radius: 30px;
     background: -webkit-linear-gradient(315deg, #e61f6c 0%, #c21a5a 100%);
-    background: linear-gradient(135deg, #3acccc 0%, rgb(53, 74, 154) 100%);
+    background: linear-gradient(135deg, #3acccc 0%, rgb(46, 116, 119) 100%);
 }
 
 #login-form .btn-submit:hover {
@@ -174,4 +175,17 @@ body {
 #login-form .btn-submit.active {
     outline: 0;
     box-shadow: none;
+}
+
+/*Project section*/
+
+#project {
+    background: linear-gradient(180deg, rgb(66, 66, 66) 0%, rgb(0, 0, 0) 100%);
+}
+
+#project-form {
+    margin: 5% 30%;
+    background-color: white;
+    padding: 50px 70px;
+    border-radius: 21px;
 }
